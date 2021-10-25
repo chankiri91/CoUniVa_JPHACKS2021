@@ -12,11 +12,18 @@ class LoginPage extends StatelessWidget {
         // SafeAreaはchildを画面内に収める
         child: LayoutBuilder(
           builder: (context, constraints) {
+            // builderの引数としてconstraintsが渡される
+            // constraintsはheightやwidth
             return SingleChildScrollView(
+              // widgetが縦サイズを超えるとスクロール
               child: ConstrainedBox(
+                // 引数 constraints に BoxConstraintsを指定
                 constraints: BoxConstraints(minHeight: constraints.maxHeight),
+                // 引数　minWidth, minHeight, maxWidth, maxHeight
                 child: Padding(
+                  // childに表示したい要素を指定
                   padding: const EdgeInsets.all(32.0),
+                  // 四方すべてに20ピクセル
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -24,6 +31,7 @@ class LoginPage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           TextField(
+                            autofocus: true,
                             controller: null,
                             decoration: InputDecoration(
                               border: OutlineInputBorder(
@@ -34,6 +42,7 @@ class LoginPage extends StatelessWidget {
                           ),
                           const SizedBox(height: 24.0),
                           TextField(
+                            obscureText: true,
                             controller: null, // Controller実装必要
                             decoration: InputDecoration(
                               border: OutlineInputBorder(
