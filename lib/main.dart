@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jphacks2021_a_2103/login_page.dart';
+import 'package:jphacks2021_a_2103/profile_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,25 +29,34 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(
-        child: ElevatedButton(
-          child: Text('ログイン'),
-          onPressed: () => {
-            Navigator.push(
+      body: Container(
+        child: Column(children: <Widget>[
+          ElevatedButton(
+            child: Text('ログイン'),
+            onPressed: () => {
+              Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => LoginPage()),
-            )
-          },
-        ),
+              )
+            },
+          ),
+          ElevatedButton(
+            child: Text('プロフィール'),
+            onPressed: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ProfilePage()),
+              )
+            },
+          ),
+        ]),
       ),
     );
   }
 }
-
