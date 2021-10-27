@@ -12,7 +12,7 @@ class ChatMain extends StatelessWidget {
         backgroundColor: Colors.white,
         iconTheme: const IconThemeData(color: Colors.black),
         title: const Text(
-          'Chat',
+          '背徳感',
           style: TextStyle(color: Colors.black),
         ),
       ),
