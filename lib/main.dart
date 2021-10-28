@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jphacks2021_a_2103/login_page.dart';
+import 'package:jphacks2021_a_2103/map_page.dart';
 import 'package:jphacks2021_a_2103/profile_page.dart';
 
 void main() {
@@ -52,6 +53,15 @@ class _MyHomePageState extends State<MyHomePage> {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => ProfilePage()),
+              )
+            },
+          ),
+          ElevatedButton(
+            child: Text('map'),
+            onPressed: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => MapPage()),
               )
             },
           ),
