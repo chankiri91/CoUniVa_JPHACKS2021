@@ -4,7 +4,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 class MapPage extends StatelessWidget {
 
   static final CameraPosition _kGooglePlex = CameraPosition(
-    target: LatLng(35.6804, 139.7690),
+    target: LatLng(37.5238, 139.9374),
     zoom: 14.4746,
   );
 
@@ -17,6 +17,7 @@ class MapPage extends StatelessWidget {
       body: GoogleMap(
         mapType: MapType.hybrid,
         initialCameraPosition: _kGooglePlex,
+        myLocationButtonEnabled: true,
       ),
     );
   }
