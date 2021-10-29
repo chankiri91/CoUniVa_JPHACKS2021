@@ -8,6 +8,7 @@ class ChatMain extends StatelessWidget {
     String rightMessage;
 
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         backgroundColor: Colors.white,
         iconTheme: const IconThemeData(color: Colors.black),
