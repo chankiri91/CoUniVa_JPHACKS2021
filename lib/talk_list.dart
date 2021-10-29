@@ -10,7 +10,7 @@ class TalkList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: const Color.fromARGB(1000,0,250,150),
         iconTheme: const IconThemeData(color: Colors.black),
         title: const Text(
           'Talk List',
@@ -36,7 +36,9 @@ class TalkList extends StatelessWidget {
               horizontal: 28.0,
               vertical: 8.0,
             ),
-            leading: CircleAvatar(), //ここは ClipOvalを使って書き換える
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ), //ここは ClipOvalを使って書き換える
             trailing: Text("3分前"),
             title: Text("背徳感"),
             subtitle: Text("おけ"),
@@ -52,7 +54,9 @@ class TalkList extends StatelessWidget {
               horizontal: 28.0,
               vertical: 0,
             ),
-            leading: CircleAvatar(), //ここは ClipOvalを使って書き換える
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ), //ここは ClipOvalを使って書き換える
             trailing: Text("6分前"),
             title: Text("kiri"),
             subtitle: Text("おっぱっぴー"),
@@ -68,7 +72,9 @@ class TalkList extends StatelessWidget {
               horizontal: 28.0,
               vertical: 8.0,
             ),
-            leading: CircleAvatar(), //ここは ClipOvalを使って書き換える
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ), //ここは ClipOvalを使って書き換える
             trailing: Text("10分前"),
             title: Text("hibiki"),
             subtitle: Text("課題終わらなくて草"),
@@ -84,7 +90,9 @@ class TalkList extends StatelessWidget {
               horizontal: 28.0,
               vertical: 0,
             ),
-            leading: CircleAvatar(), //ここは ClipOvalを使って書き換える
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ), //ここは ClipOvalを使って書き換える
             trailing: Text("30分前"),
             title: Text("ボブ"),
             subtitle: Text("絶対儲かる話あるんだけど..."),
@@ -100,7 +108,9 @@ class TalkList extends StatelessWidget {
               horizontal: 28.0,
               vertical: 8.0,
             ),
-            leading: CircleAvatar(), //ここは ClipOvalを使って書き換える
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ), //ここは ClipOvalを使って書き換える
             trailing: Text("1時間前"),
             title: Text("JPHACKS"),
             subtitle: Text("皆さんお疲れ様です..."),
@@ -116,7 +126,9 @@ class TalkList extends StatelessWidget {
               horizontal: 28.0,
               vertical: 0,
             ),
-            leading: CircleAvatar(), //ここは ClipOvalを使って書き換える
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ), //ここは ClipOvalを使って書き換える
             trailing: Text("1日前"),
             title: Text("ボブ"),
             subtitle: Text("絶対儲かる話あるんだけど..."),
