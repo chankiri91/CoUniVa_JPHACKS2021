@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jphacks2021_a_2103/chat_main.dart';
+import 'package:jphacks2021_a_2103/firebase_test.dart';
 
 class TalkList extends StatelessWidget {
   const TalkList({
@@ -25,7 +26,12 @@ class TalkList extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.settings),
             color: Colors.black,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => FirebaseTest()),
+              );
+            },
           ),
         ],
       ),
