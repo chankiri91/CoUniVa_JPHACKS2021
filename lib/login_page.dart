@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jphacks2021_a_2103/chat_main.dart';
 
 class LoginPage extends StatelessWidget {
 
@@ -67,7 +68,10 @@ class LoginPage extends StatelessWidget {
                             MaterialStateProperty.all(Colors.white),
                           ),
                           onPressed: () {
-                            // ボタン処理
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => ChatMain()),
+                            ); // どうしてここにセミコロンがつくのか謎
                           },
                           child: const Text('Log in'),
                         ),
