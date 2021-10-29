@@ -5,8 +5,26 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Log in'),
+            appBar: AppBar(
+        backgroundColor: const Color.fromARGB(1000,0,250,150),
+        iconTheme: const IconThemeData(color: Colors.black),
+        title: const Text(
+          'Log in',
+          style: TextStyle(color: Colors.black),
+          
+        ),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.search),
+            color: Colors.black,
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: Icon(Icons.settings),
+            color: Colors.black,
+            onPressed: () {},
+          ),
+        ],
       ),
       body: SafeArea(
         // SafeAreaはchildを画面内に収める
@@ -31,24 +49,36 @@ class LoginPage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           TextField(
+                            cursorColor: Colors.black,
                             autofocus: true,
                             controller: null,
                             decoration: InputDecoration(
-                              border: OutlineInputBorder(
+                              enabledBorder: OutlineInputBorder(
+                                borderSide: BorderSide(color: Colors.black),
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
-                              labelText: 'mail address',
+                              focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(color: const Color.fromARGB(1000,0,250,150),),
+                                borderRadius: BorderRadius.circular(8.0),
+                              ),
+                              hintText: 'mail address',
                             ),
                           ),
                           const SizedBox(height: 24.0),
                           TextField(
+                            cursorColor: Colors.black,
                             obscureText: true,
                             controller: null, // Controller実装必要
                             decoration: InputDecoration(
-                              border: OutlineInputBorder(
+                              enabledBorder: OutlineInputBorder(
+                                borderSide: BorderSide(color: Colors.black),
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
-                              labelText: 'password',
+                              focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(color: const Color.fromARGB(1000,0,250,150),),
+                                borderRadius: BorderRadius.circular(8.0),
+                              ),
+                              hintText: 'password',
                             ),
                           ),
                         ],
@@ -62,9 +92,9 @@ class LoginPage extends StatelessWidget {
                         child: TextButton(
                           style: ButtonStyle(
                             backgroundColor:
-                                MaterialStateProperty.all(Colors.blue),
+                                MaterialStateProperty.all(const Color.fromARGB(1000,0,250,150),),
                             foregroundColor:
-                                MaterialStateProperty.all(Colors.white),
+                                MaterialStateProperty.all(Colors.black),
                           ),
                           onPressed: () {
                             Navigator.push(

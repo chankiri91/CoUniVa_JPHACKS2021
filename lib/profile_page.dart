@@ -5,7 +5,7 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: const Color.fromARGB(1000,0,250,150),
         iconTheme: const IconThemeData(color: Colors.black),
         title: const Text(
           'Profile',
