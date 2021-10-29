@@ -1,9 +1,13 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:jphacks2021_a_2103/firebase_test.dart';
 import 'package:jphacks2021_a_2103/login_page.dart';
 import 'package:jphacks2021_a_2103/map_page.dart';
 import 'package:jphacks2021_a_2103/profile_page.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -62,6 +66,15 @@ class _MyHomePageState extends State<MyHomePage> {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => MapPage()),
+              )
+            },
+          ),
+          ElevatedButton(
+            child: Text('firebase-test'),
+            onPressed: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => FirebaseTest()),
               )
             },
           ),
