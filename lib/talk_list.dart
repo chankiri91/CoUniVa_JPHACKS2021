@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jphacks2021_a_2103/chat_main.dart';
+import 'package:jphacks2021_a_2103/friends_list.dart';
 
 class TalkList extends StatelessWidget {
   @override
@@ -24,8 +25,13 @@ class TalkList extends StatelessWidget {
         child: ListContents(),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 0,
+        type: BottomNavigationBarType.fixed,
+        currentIndex: 1,
         items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: "Friends",
+          ),
           BottomNavigationBarItem(
             icon: Icon(Icons.chat),
             label: "Chats",
@@ -113,7 +119,7 @@ class ListContents extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => ChatMain()),
+              MaterialPageRoute(builder: (context) => FriendsList()),
             ); // どうしてここにセミコロンがつくのか謎
           },
         ),
@@ -145,7 +151,7 @@ class ListContents extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => ChatMain()),
+              MaterialPageRoute(builder: (context) => FriendsList()),
             ); // どうしてここにセミコロンがつくのか謎
           },
         ),
