@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jphacks2021_a_2103/chat_main.dart';
+import 'package:jphacks2021_a_2103/talk_list.dart';
 
 class LoginPage extends StatelessWidget {
 
@@ -70,7 +70,7 @@ class LoginPage extends StatelessWidget {
                           onPressed: () {
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => ChatMain()),
+                              MaterialPageRoute(builder: (context) => TalkList()),
                             ); // どうしてここにセミコロンがつくのか謎
                           },
                           child: const Text('Log in'),
