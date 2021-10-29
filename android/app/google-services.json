@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "520121713173",
+    "project_id": "a-2103-8f1be",
+    "storage_bucket": "a-2103-8f1be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520121713173:android:3dac181cb25f847ea1c41c",
+        "android_client_info": {
+          "package_name": "com.example.jphacks2021_a_2103"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "520121713173-70fk9mune95v0ttesa2g3vv1flqp5m6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcyl_GiO6D-LKU3XGMNLXQl15GMo9IaLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520121713173-70fk9mune95v0ttesa2g3vv1flqp5m6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
