@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:jphacks2021_a_2103/talk_list.dart';
+import 'package:jphacks2021_a_2103/base.dart';
 
 class LoginPage extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -63,14 +62,14 @@ class LoginPage extends StatelessWidget {
                         child: TextButton(
                           style: ButtonStyle(
                             backgroundColor:
-                            MaterialStateProperty.all(Colors.blue),
+                                MaterialStateProperty.all(Colors.blue),
                             foregroundColor:
-                            MaterialStateProperty.all(Colors.white),
+                                MaterialStateProperty.all(Colors.white),
                           ),
                           onPressed: () {
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => TalkList()),
+                              MaterialPageRoute(builder: (context) => Base()),
                             ); // どうしてここにセミコロンがつくのか謎
                           },
                           child: const Text('Log in'),

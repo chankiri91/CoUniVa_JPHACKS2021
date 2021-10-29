@@ -17,6 +17,11 @@ class FriendsList extends StatelessWidget {
             color: Colors.black,
             onPressed: () {},
           ),
+          IconButton(
+            icon: Icon(Icons.settings),
+            color: Colors.black,
+            onPressed: () {},
+          ),
         ],
       ),
       body: ListView(
@@ -29,9 +34,8 @@ class FriendsList extends StatelessWidget {
             leading: CircleAvatar(),
             title: Text("ボブ"),
           ),
-
-Text("----------------------------------------------------------------"),
-
+          Text(
+              "----------------------------------------------------------------"),
           ListTile(
             contentPadding: const EdgeInsets.symmetric(
               horizontal: 28.0,
@@ -59,28 +63,6 @@ Text("----------------------------------------------------------------"),
             ),
             leading: CircleAvatar(),
             title: Text("JPHACKS"),
-          ),
-        ],
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        currentIndex: 0,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: "Friends",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.chat),
-            label: "Chats",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.call),
-            label: "Calls",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: "Settings",
           ),
         ],
       ),
