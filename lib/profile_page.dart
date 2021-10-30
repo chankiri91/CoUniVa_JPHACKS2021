@@ -43,10 +43,22 @@ class ProfilePage extends StatelessWidget {
                 fit: BoxFit.fill,
               ),
             ),
-            Text('Takashi Saito'),
-            Text('Takashi Saito'),
-            Text('Takashi Saito'),
-            Text('Takashi Saito'),
+            
+            Text(
+              'Takashi Saito',
+              style: TextStyle(
+                fontSize: 36,
+                fontWeight: FontWeight.bold,
+              ),
+              ),
+            Text(
+              '研究室: JP研(A213)',
+              style: TextStyle(fontSize: 22,)
+              ),
+            Text(
+              'Mail: jphacksa2103@jphacks.ac.jp'
+            ),
+            Text('ひとこと: え、秋って廃止された...？'),
           ],
         ),
       ),
