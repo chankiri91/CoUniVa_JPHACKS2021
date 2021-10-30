@@ -1,12 +1,23 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:jphacks2021_a_2103/base.dart';
 import 'package:jphacks2021_a_2103/firebase_test.dart';
 
-class LoginPage extends StatelessWidget {
+class Login extends StatefulWidget {
+  @override
+  _LoginPage createState() => _LoginPage();
+}
+
+class _LoginPage extends State<Login> {
+  String login_Email = "";  // 入力されたメールアドレス
+  String login_Password = "";  // 入力されたパスワード
+
+  final FirebaseAuth auth = FirebaseAuth.instance;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-            appBar: AppBar(
+        appBar: AppBar(
         backgroundColor: const Color.fromARGB(1000,0,250,150),
         iconTheme: const IconThemeData(color: Colors.black),
         title: const Text(
@@ -18,7 +29,12 @@ class LoginPage extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.search),
             color: Colors.black,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Base()),
+              );
+            },
           ),
           IconButton(
             icon: Icon(Icons.settings),
@@ -69,6 +85,9 @@ class LoginPage extends StatelessWidget {
                               ),
                               hintText: 'mail address',
                             ),
+                            onChanged: (String value) {
+                              login_Email = value;
+                            },
                           ),
                           const SizedBox(height: 24.0),
                           TextField(
@@ -86,6 +105,9 @@ class LoginPage extends StatelessWidget {
                               ),
                               hintText: 'password',
                             ),
+                            onChanged: (String value) {
+                              login_Password = value;
+                            },
                           ),
                         ],
                       ),
@@ -102,11 +124,23 @@ class LoginPage extends StatelessWidget {
                             foregroundColor:
                                 MaterialStateProperty.all(Colors.black),
                           ),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) => Base()),
-                            ); // どうしてここにセミコロンがつくのか謎
+                          onPressed: () async {
+                            try {
+                              UserCredential userCredential = await FirebaseAuth.instance.signInWithEmailAndPassword(
+                                email: login_Email,
+                                password: login_Password
+                              );
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => Base()),
+                              ); // どうしてここにセミコロンがつくのか謎
+                            } on FirebaseAuthException catch (e) {
+                              if (e.code == 'user-not-found') {
+                                print('No user found for that email.');
+                              } else if (e.code == 'wrong-password') {
+                                print('Wrong password provided for that user.');
+                              }
+                            }
                           },
                           child: const Text('Log in'),
                         ),
