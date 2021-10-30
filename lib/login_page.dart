@@ -29,7 +29,12 @@ class _LoginPage extends State<Login> {
           IconButton(
             icon: Icon(Icons.search),
             color: Colors.black,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Base()),
+              );
+            },
           ),
           IconButton(
             icon: Icon(Icons.settings),
