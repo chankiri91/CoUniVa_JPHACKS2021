@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jphacks2021_a_2103/chat_page.dart';
 import 'package:jphacks2021_a_2103/chat_main.dart';
 import 'package:jphacks2021_a_2103/firebase_test.dart';
 
@@ -51,7 +52,7 @@ class TalkList extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ChatMain()),
+                MaterialPageRoute(builder: (context) => ChatPage("背徳感")),
               ); // どうしてここにセミコロンがつくのか謎
             },
           ),
@@ -69,7 +70,7 @@ class TalkList extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ChatMain()),
+                MaterialPageRoute(builder: (context) => ChatPage("kiri")),
               ); // どうしてここにセミコロンがつくのか謎
             },
           ),
@@ -87,7 +88,7 @@ class TalkList extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ChatMain()),
+                MaterialPageRoute(builder: (context) => ChatPage("hibiki")),
               ); // どうしてここにセミコロンがつくのか謎
             },
           ),
@@ -105,7 +106,7 @@ class TalkList extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ChatMain()),
+                MaterialPageRoute(builder: (context) => ChatPage("ボブ")),
               ); // どうしてここにセミコロンがつくのか謎
             },
           ),
@@ -123,7 +124,7 @@ class TalkList extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ChatMain()),
+                MaterialPageRoute(builder: (context) => ChatPage("JPHACKS")),
               ); // どうしてここにセミコロンがつくのか謎
             },
           ),
@@ -141,7 +142,7 @@ class TalkList extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ChatMain()),
+                MaterialPageRoute(builder: (context) => ChatPage("ボブ")),
               ); // どうしてここにセミコロンがつくのか謎
             },
           ),
