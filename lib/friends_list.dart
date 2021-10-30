@@ -32,18 +32,7 @@ class FriendsList extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
-          ListTile(
-            contentPadding: const EdgeInsets.symmetric(
-              horizontal: 28.0,
-              vertical: 28.0,
-            ),
-            leading: CircleAvatar(
-              backgroundColor: const Color.fromARGB(1000,0,250,150),
-            ),
-            title: Text("ボブ"),
-          ),
-          Text(
-              "----------------------------------------------------------------"),
+          
           ListTile(
             contentPadding: const EdgeInsets.symmetric(
               horizontal: 28.0,
@@ -79,6 +68,202 @@ class FriendsList extends StatelessWidget {
               backgroundColor: const Color.fromARGB(1000,0,250,150),
             ),
             title: Text("JPHACKS"),
+          ),
+          ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
+          ),
+          ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
+          ),
+          ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
+          ),
+          ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
+          ),
+          ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
+          ),
+          ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
+          ),
+          ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
+          ),
+          ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
+          ),
+          ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
+          ),ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
+          ),
+          ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
+          ),
+          ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
+          ),
+          ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
+          ),
+          ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
+          ),
+          ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
+          ),
+          ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
+          ),ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
+          ),
+          ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
+          ),
+          ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
+          ),
+          ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
+          ),
+          ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
+          ),
+          ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 28.0,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: const Color.fromARGB(1000,0,250,150),
+            ),
+            title: Text("ボブ"),
           ),
         ],
       ),
