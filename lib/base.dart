@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:jphacks2021_a_2103/chat_main.dart';
 import 'package:jphacks2021_a_2103/friends_list.dart';
 import 'package:jphacks2021_a_2103/talk_list.dart';
 import 'package:jphacks2021_a_2103/profile_page.dart';
 import 'package:jphacks2021_a_2103/map_page.dart';
+import 'package:jphacks2021_a_2103/bulletin_board.dart';
 
 class Base extends StatefulWidget {
   const Base({Key? key}) : super(key: key);
@@ -24,6 +24,9 @@ class BaseState extends State<Base> {
     ),
     Container(
       child: MapPage(),
+    ),
+    Container(
+      child: BulletinBoard(),
     ),
     SafeArea(
       child: ProfilePage(),
@@ -53,9 +56,14 @@ class BaseState extends State<Base> {
             label: "Map",
           ),
           BottomNavigationBarItem(
+            icon: Icon(Icons.info),
+            label: "information",
+          ),
+          BottomNavigationBarItem(
             icon: Icon(Icons.account_circle),
             label: "Profile",
           ),
+          
         ],
         currentIndex: selectedIndex,
         onTap: (index) {
