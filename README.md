@@ -1,18 +1,23 @@
-# jphacks2021_a_2103
+# タイトル
+CoUniVa
 
-A new Flutter project.
+# 概要
+友人や教授と場所を共有できるSNS
 
-## Getting Started
+# 背景
+- 2021年1月、大学の友人と3人チームで、JPHACKSというハッカソンに参加して作ったモバイルアプリ。
+- Learning Sprintと呼ばれる、1週間の勉強期間が魅力的だったことと、ハッカソンに興味があったため参加した。
+- ハプニングもあったが楽しかった
 
-This project is a starting point for a Flutter application.
+# 動画
+https://youtu.be/Ck_FBDsJN7g
 
-A few resources to get you started if this is your first Flutter project:
+# 使用技術
+- Flutter
+- Firebase
+- Google map API
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-Hey!!!
+# 機能一覧
+- ユーザー登録、ログイン昨日(Firebase Auth)
+- チャット機能(Firestore)
+- マップ表示(Google map API)
